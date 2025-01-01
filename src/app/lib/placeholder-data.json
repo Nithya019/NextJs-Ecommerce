@@ -1,0 +1,124 @@
+[
+  {
+    "id": 7,
+    "type": "sunglasses",
+    "image": "https://images.unsplash.com/photo-1511499602539-b3f6b9b79014",
+    "title": "Sample",
+    "price": "19.99",
+    "shape": "oval"
+  },
+  {
+    "id": 2,
+    "type": "sunglasses",
+    "image": "https://images.unsplash.com/photo-1580233435821-bf3c84f386f9",
+    "title": "Sample",
+    "price": "18.99",
+    "shape": "oval"
+  },
+  {
+    "id": 6,
+    "type": "sunglasses",
+    "image": "https://images.unsplash.com/photo-1580604987953-2f5f76469cf8",
+    "title": "Sample",
+    "price": "17.99",
+    "shape": "oval"
+  },
+
+  {
+    "id": 8,
+    "type": "sunglasses",
+    "image": "https://images.unsplash.com/photo-1587310311582-aa7610e90826",
+    "title": "Sample",
+    "price": "19.99",
+    "shape": "oval"
+  },
+  {
+    "id": 1,
+    "type": "sunglasses",
+    "image": "https://images.pexels.com/photos/7819284/pexels-photo-7819284.jpeg",
+    "title": "Sample",
+    "price": "23.99",
+    "shape": "oval"
+  },
+  {
+    "id": 9,
+    "type": "sunglasses",
+    "image": "https://images.unsplash.com/photo-1600024914363-d9bf85e438f0",
+    "title": "Sample",
+    "price": "24.99",
+    "shape": "oval"
+  },
+
+  {
+    "id": 3,
+    "type": "sportsglass",
+    "image": "https://images.pexels.com/photos/13430498/pexels-photo-13430498.jpeg",
+    "title": "Sample",
+    "price": "25.99",
+    "shape": "oval"
+  },
+  {
+    "id": 4,
+    "type": "sunglasses",
+    "image": "https://images.pexels.com/photos/13430499/pexels-photo-13430499.jpeg",
+    "title": "Sample",
+    "price": "15.99",
+    "shape": "oval"
+  },
+  {
+    "id": 5,
+    "type": "sunglasses",
+    "image": "https://images.unsplash.com/photo-1610136649349-0f646f318053",
+    "title": "Sample",
+    "price": "12.99",
+    "shape": "oval"
+  },
+  {
+    "id": 10,
+    "type": "sunglasses",
+    "image": "https://images.unsplash.com/photo-1581778571772-11f8c6af4103",
+    "title": "Sample",
+    "price": "44.99",
+    "shape": "oval"
+  },
+  {
+    "id": 16,
+    "type": "sunglasses",
+    "image": "https://images.unsplash.com/photo-1511499602539-b3f6b9b79014",
+    "title": "Sample",
+    "price": "19.99",
+    "shape": "oval"
+  },
+  {
+    "id": 17,
+    "type": "sportsglasses",
+    "image": "https://media.istockphoto.com/id/1320718173/photo/picture-of-anti-uv-sunglasses-that-suitable-for-outdoor-activity-to-protect-eyes-from-uv-light.jpg?s=2048x2048&w=is&k=20&c=M03Wg-RYMQPGQzU6n7iANRsbp1TZyBewP5P0zNrR-1A=",
+    "title": "Sample",
+    "price": "19.99",
+    "shape": "oval"
+  },
+  {
+    "id": 18,
+    "type": "sportsglasses",
+    "image": "https://media.istockphoto.com/id/1320718168/photo/picture-of-anti-uv-sunglasses-that-suitable-for-outdoor-activity-to-protect-eyes-from-uv-light.jpg?s=2048x2048&w=is&k=20&c=zcDh0JHqeO93aUd9AsW2bAa3VyQ9iCBqbZlGWqNZkfw=",
+    "title": "Sample",
+    "price": "19.99",
+    "shape": "oval"
+  },
+  {
+    "id": 19,
+    "type": "sportsglasses",
+    "image": "https://media.istockphoto.com/id/1320718174/photo/picture-of-anti-uv-sunglasses-that-suitable-for-outdoor-activity-to-protect-eyes-from-uv-light.jpg?s=2048x2048&w=is&k=20&c=QMufK_iiGWnK6MctLPQKa82s1Dut0S94WWYhjc6AQDo=",
+    "title": "Sample",
+    "price": "19.99",
+    "shape": "oval"
+  },
+  {
+    "id": 20,
+    "type": "sportsglasses",
+    "image": "https://media.istockphoto.com/id/1320718177/photo/picture-of-anti-uv-sunglasses-that-suitable-for-outdoor-activity-to-protect-eyes-from-uv-light.jpg?s=2048x2048&w=is&k=20&c=zwAIcK7LNRbklnc05rFeNW0NgoDEo3fvXZ6Ke30d7m4=",
+    "title": "Sample",
+    "price": "19.99",
+    "shape": "oval"
+  }
+]
