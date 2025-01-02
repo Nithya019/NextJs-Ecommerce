@@ -8,5 +8,5 @@ export interface ProductInterface {
 }
 
 export interface cartItemInterface extends ProductInterface {
-  count?: number;
+  count: number;
 }

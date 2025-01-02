@@ -1,7 +1,7 @@
 "use client";
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
-import { cartItemInterface } from "../interfaces/productInterfaces";
+import { cartItemInterface } from "@/app/interfaces/productInterfaces";
 
 const cartSlice = createSlice({
   name: "cart",

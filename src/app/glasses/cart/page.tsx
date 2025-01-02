@@ -4,9 +4,15 @@ import { RootState } from "@/app/redux/store";
 import { useSelector } from "react-redux";
 import Image from "next/image";
 import { cartItemInterface } from "@/app/interfaces/productInterfaces";
-import CartAction from "../cartAction/page";
+import {
+  removeFromCart,
+  incrementItem,
+  decrementItem,
+} from "@/app/redux/cartSlice";
+import { useDispatch } from "react-redux";
 
 export default function Cart() {
+  const dispatch = useDispatch();
   const cartItem = useSelector((state: RootState) => state.cart);
   const getGrandTotalPrice = () => {
     return cartItem
@@ -17,7 +23,7 @@ export default function Cart() {
       .toFixed(2);
   };
 
-  const getTotalPrice = (item) => {
+  const getTotalPrice = (item: cartItemInterface) => {
     return (item.price * item.count).toFixed(2);
   };
 
@@ -48,7 +54,24 @@ export default function Cart() {
                 <p>{item.count}</p>
 
                 <div>
-                  <CartAction itemId={item.id} />
+                  <button
+                    onClick={() => dispatch(incrementItem(item.id))}
+                    className="px-4 py-2 border border-inherit rounded mr-2"
+                  >
+                    {" "}
+                    +{" "}
+                  </button>
+                  <button
+                    onClick={() => dispatch(decrementItem(item.id))}
+                    className="px-4 py-2 border border-inherit rounded mr-2"
+                  >
+                    {" "}
+                    -{" "}
+                  </button>
+                  <button onClick={() => dispatch(removeFromCart(item.id))}>
+                    {" "}
+                    Remove{" "}
+                  </button>
                 </div>
                 <div className="flex flex-col">
                   Total
