@@ -17,14 +17,14 @@ export default function Cart() {
   const getGrandTotalPrice = () => {
     return cartItem
       .reduce(
-        (acc, item: cartItemInterface) => acc + item.count * item.price,
+        (acc, item: cartItemInterface) => acc + item.count * parseInt(item.price),
         0
       )
       .toFixed(2);
   };
 
   const getTotalPrice = (item: cartItemInterface) => {
-    return (item.price * item.count).toFixed(2);
+    return (parseInt(item.price) * item.count).toFixed(2);
   };
 
   return (

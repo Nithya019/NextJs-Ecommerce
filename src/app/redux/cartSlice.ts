@@ -1,45 +1,48 @@
 "use client";
 import { createSlice } from "@reduxjs/toolkit";
-import type { PayloadAction } from "@reduxjs/toolkit";
 import { cartItemInterface } from "@/app/interfaces/productInterfaces";
 
 const cartSlice = createSlice({
   name: "cart",
-  initialState: [],
+  initialState: [] as cartItemInterface[],
   reducers: {
-    addTocart: (state, action: PayloadAction<cartItemInterface>) => {
+    addTocart: (state, action) => {
       const itemExists = state.find(
         (item: cartItemInterface) => item.id === action.payload.id
       );
       if (itemExists) {
         itemExists.count++;
       } else {
-        state.push({ ...action.payload, count: 1 });
+        if (action.payload) {
+          state.push({ ...action.payload, count: 1 });
+        }
       }
     },
-    removeFromCart: (state, action: PayloadAction<number | undefined>) => {
+    removeFromCart: (state, action) => {
       const getItemIndex = state.findIndex(
         (item: cartItemInterface) => item.id === action.payload
       );
       state.splice(getItemIndex, 1);
     },
-    incrementItem: (state, action: PayloadAction<number | undefined>) => {
+    incrementItem: (state, action) => {
       const getItem = state.find(
         (item: cartItemInterface) => item.id === action.payload
       );
-      getItem.count++;
+      if (getItem) {
+        getItem["count"]++;
+      }
     },
-    decrementItem: (state, action: PayloadAction<number | undefined>) => {
+    decrementItem: (state, action) => {
       const getItem = state.find(
         (item: cartItemInterface) => item.id === action.payload
       );
-      if (getItem.count === 1) {
+      if (getItem && getItem["count"] === 1) {
         const index = state.findIndex(
           (item: cartItemInterface) => item.id === action.payload
         );
         state.splice(index, 1);
       } else {
-        getItem.count--;
+        if (getItem) getItem["count"]--;
       }
     },
   },

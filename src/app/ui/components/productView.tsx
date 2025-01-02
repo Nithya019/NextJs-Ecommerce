@@ -3,8 +3,9 @@
 import Image from "next/image";
 import { useDispatch } from "react-redux";
 import { addTocart } from "@/app/redux/cartSlice";
+import { ProductInterface } from "@/app/interfaces/productInterfaces";
 
-export default function ProductView({ product }) {
+export default function ProductView({ product }: {product : ProductInterface}) {
   const dispatch = useDispatch();
 
   const addItemToCart = () => {
